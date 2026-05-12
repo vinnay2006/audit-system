@@ -1,11 +1,11 @@
-
+import AISummary from "./AISummary";
 
 export default function AuditResults({ data, onBack }) {
   const { results, totalCurrentSpend, totalSaving } = data;
 
   return (
     <div style={{ maxWidth: "800px", margin: "0 auto", padding: "32px 16px" }}>
-
+<AISummary auditData={data}/>
      
       <div style={{
         background: totalSaving > 0 ? "#f0faf4" : "#f9f9f9",
