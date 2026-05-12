@@ -6,9 +6,13 @@ export default function AISummary({ auditData }) {
   const [loading, setLoading] = useState(true);
   const [usedFallback, setUsedFallback] = useState(false);
 
-  useEffect(() => {
-    generateSummary();
-  }, [generateSummary]);
+ useEffect(() => {
+  async function generateSummary() {
+    // logic
+  }
+
+  generateSummary();
+}, []);
 
   async function generateSummary() {
     const { results, totalCurrentSpend, totalSaving } = auditData;
