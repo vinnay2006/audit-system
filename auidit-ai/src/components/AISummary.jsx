@@ -8,7 +8,7 @@ export default function AISummary({ auditData }) {
 
   useEffect(() => {
     generateSummary();
-  }, []);
+  }, [generateSummary]);
 
   async function generateSummary() {
     const { results, totalCurrentSpend, totalSaving } = auditData;
