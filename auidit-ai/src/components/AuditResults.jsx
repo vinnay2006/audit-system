@@ -1,12 +1,15 @@
 import AISummary from "./AISummary";
-
+import EmailGate from "./EmailGate";
 export default function AuditResults({ data, onBack }) {
   const { results, totalCurrentSpend, totalSaving } = data;
 
   return (
     <div style={{ maxWidth: "800px", margin: "0 auto", padding: "32px 16px" }}>
 <AISummary auditData={data}/>
-     
+        <EmailGate
+  totalSaving={data.totalSaving}
+  onSubmit={(lead) => console.log("lead captured:", lead)}
+/>   
       <div style={{
         background: totalSaving > 0 ? "#f0faf4" : "#f9f9f9",
         border: "1px solid #e0e0e0",
