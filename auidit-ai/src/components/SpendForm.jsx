@@ -4,6 +4,8 @@ import ToolRow from "./ToolRow.jsx";
 import { saveTools, loadTools } from "../utils/storage";
 import { TOOLS, USE_CASES } from "../utils/toolsData";
 //this form act as the parent manmager of the tool rows 
+console.log("TOOLS =", TOOLS);
+console.log("USE_CASES =", USE_CASES);
 function createEmptyTool() {
   return {
     name: TOOLS[0].name,
@@ -26,6 +28,7 @@ export default function SpendForm({ onSubmit }) {
 
   //this will help in saving details  to localStorage on every change in the form
   useEffect(() => {
+     console.log("TOOLS =", TOOLS);
     saveTools(tools);
   }, [tools]);
 
@@ -55,6 +58,7 @@ export default function SpendForm({ onSubmit }) {
   const total = tools.reduce((sum, t) => sum + (Number(t.spend) || 0), 0);
 
   return (
+   
     <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "32px 16px" }}>
       <h1 style={{ fontSize: "24px", fontWeight: 500, marginBottom: "8px" }}>
         AI spend audit
