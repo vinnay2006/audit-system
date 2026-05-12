@@ -6,11 +6,11 @@ export default function AISummary({ auditData }) {
   const [loading, setLoading] = useState(true);
   const [usedFallback, setUsedFallback] = useState(false);
 
-  useEffect(() => {
-    generateSummary();
+useEffect(() => {
+  generateSummary();
 
-
-  }, []);
+ 
+}, []);
 
   async function generateSummary() {
     const { results, totalCurrentSpend, totalSaving } = auditData;
@@ -55,7 +55,7 @@ Sound like a helpful advisor. One paragraph only, no bullet points.
       setSummary(data.content[0].text);
 
     } catch (err) {
-      
+      // fallback summary — runs as long as the api key is missing so in my case it will run in all cases becoz i lag  free credits 
       setUsedFallback(true);
       setSummary(generateFallback(auditData));
     } finally {
