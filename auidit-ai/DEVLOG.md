@@ -37,4 +37,4 @@ auditEngine.js not started yet — results page shows raw JSON for now.
 **Plan for tomorrow:**
 Build auditEngine.js with pricing logic.
 Start audit results page with per-tool breakdown.
-```
+```                                                                                                         

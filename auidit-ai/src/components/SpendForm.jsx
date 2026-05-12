@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react";
-import ToolRow from "./ToolRow";
+import ToolRow from "./ToolRow.jsx";
 import { saveTools, loadTools } from "../utils/storage";
 import { TOOLS, USE_CASES } from "../utils/toolsData";
 //this form act as the parent manmager of the tool rows 

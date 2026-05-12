@@ -1,4 +1,4 @@
-
+// src/App.jsx
 import { useState } from "react";
 import SpendForm from "./components/SpendForm";
 
@@ -6,8 +6,8 @@ export default function App() {
   const [auditData, setAuditData] = useState(null);
 
   function handleSubmit(tools) {
-    // this is the code for putting in fro the auditing of engine
-    
+    // for the audit engine
+    //for now we are doing just logging in
     console.log("Audit data:", tools);
     setAuditData(tools);
   }

@@ -1,7 +1,7 @@
 
 import { TOOLS, USE_CASES } from "../utils/toolsData";
 
-const DEFAULT_TOOL = TOOLS[0];
+const DEFAULT_TOOL = TOOLS?.[0];;
 
 export default function ToolRow({ tool, index, onChange, onRemove }) {
   const selectedTool = TOOLS.find((t) => t.name === tool.name) || DEFAULT_TOOL;
