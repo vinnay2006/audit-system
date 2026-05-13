@@ -25,7 +25,7 @@ npm install
 npm start
 
 ## Deploy
-Hosted on Vercel: https://audit-syst-indol.vercel.app
+Hosted on Vercel: https://audit-system-indol.vercel.app
 
 ## Decisions
 1. localStorage over sessionStorage — survives refresh
