@@ -30,7 +30,7 @@ Sound like a helpful advisor. One paragraph only, no bullet points.
     `;
 
     try {
-      const apiKey = import.meta.env.VITE_GROQ_API_KEY;
+      const apiKey = import.meta.env.VITE_ANTHROPIC_API_KEY;
 
       if (!apiKey) throw new Error("No API key");
 
@@ -38,7 +38,7 @@ Sound like a helpful advisor. One paragraph only, no bullet points.
   method: "POST",
   headers: {
     "Content-Type": "application/json",
-    "Authorization": `Bearer ${import.meta.env.VITE_GROQ_API_KEY}`,
+    "Authorization": `Bearer ${import.meta.env.VITE_ANTHROPIC_API_KEY}`,
   },
   body: JSON.stringify({
     model: "llama3-8b-8192",
