@@ -1,4 +1,53 @@
-## Day 1 — 2026-05-09
+## Day 1 — 2026-05-07
+**Hours worked:** 0
+
+**What I did:**
+No work done on the project today.
+Had end term university examinations — full day of preparation
+and revision. Could not allocate any time to the assignment.
+
+**What I learned:**
+—
+
+**Blockers / what I'm stuck on:**
+Examinations running parallel to internship assignment deadline.
+
+**Plan for tomorrow:**
+Complete remaining exam. Read through the full Credex
+assignment document carefully and plan the week ahead.
+
+-------------------------------------------------------------------------------------------------->
+
+## Day 2 — 2026-05-08
+**Hours worked:** 1.5
+
+**What I did:**
+Completed end term examination in the morning.
+Read through the full Credex internship assignment
+document carefully in the evening.
+Understood the 6 MVP features required, the file
+structure expected at repo root, and the evaluation
+criteria. Made a rough day by day plan for the week.
+Set up the React + Vite project locally.
+
+**What I learned:**
+The assignment is more entrepreneurial than technical —
+evaluators care about GTM thinking, user interviews,
+and economics as much as the code itself.
+File naming and format is non negotiable as AI reads
+submissions first before any human sees them.
+
+**Blockers / what I'm stuck on:**
+Late start due to exams — need to move fast
+without compromising quality of required docs.
+
+**Plan for tomorrow:**
+Set up public GitHub repo. Build ToolRow.jsx,
+toolsData.js, storage.js and start SpendForm.jsx.
+
+
+----------------------------------------------------------------------------------------->
+## Day 3 — 2026-05-09
 *Hours worked:* 3
 
 *What I did:*
@@ -18,7 +67,10 @@ SpendForm not yet wired into App.jsx.
 *Plan for tomorrow:*
 Finish SpendForm → wire App.jsx → build auditEngine.js
 → start results page.                                                                                                ```
-## Day 2 — 2026-05-10
+
+--------------------------------------------------------------------------------->
+
+## Day 4 — 2026-05-10
 **Hours worked:** 2
 
 **What I did:**
@@ -37,7 +89,11 @@ auditEngine.js not started yet — results page shows raw JSON for now.
 **Plan for tomorrow:**
 Build auditEngine.js with pricing logic.
 Start audit results page with per-tool breakdown.
-```                                                                                                      ## Day 3 — 2026-05-11
+
+```
+
+---------------------------------------------------------------------------------------->
+                                                                                                                 ## Day 5 — 2026-05-11
 **Hours worked:** 3
 
 **What I did:**
@@ -67,7 +123,11 @@ being rendered in the return statement of App.js.
 **Plan for tomorrow:**
 Fix the form rendering issue first.
 Then build AISummary.jsx using Anthropic API
-and EmailGate.jsx for lead capture after results.                                                                                                                                                                                              Day 4 — May 12, 2026
+and EmailGate.jsx for lead capture after results.
+
+
+------------------------------------------------------------------------------------->
+                                                                                                                                                                                              Day 6 — May 12, 2026
 
 Hours Worked
 ~5.5 hours
@@ -104,4 +164,27 @@ Plan for Tomorrow (Final Day)
 - Add loading/error states
 - Improve audit intelligence
 - Deploy project
-- Final cleanup and optimization       
+- Final cleanup and optimization  
+
+--------------------------------------------------------------------->
+
+## Day 6 — 2026-05-13
+**Hours worked:** 5
+
+**What I did:**
+Deployed project to Vercel — ran into build errors.
+Debugged and added Supabase credentials to Vercel
+project settings. Fixed errors from unused imports
+flagged by eslint in production build.
+Got green deployment, verified live URL works.
+Written all required markdown files — README, ARCHITECTURE,
+REFLECTION, PRICING_DATA, TESTS, PROMPTS, GTM,
+ECONOMICS, USER_INTERVIEWS and ci.yml for GitHub Actions.
+
+**What I learned:**
+Vercel does not read local .env — credentials must be
+added manually in project settings.
+Always run npm run build locally before pushing —
+Vite is stricter in production than local dev server.
+
+      
